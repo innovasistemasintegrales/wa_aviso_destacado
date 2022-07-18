@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/files/src/icons/icono.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/files/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/files/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/files/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="/files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/files/css/styles.css">
+    <title>Comprador</title>
+</head>
+<body>
+    <div>
+        <section id="header_tienda">
+            <div id="contenedor_header" class="row align-items-center px-3">
+                <div class="col-2">
+                    <img src="/files/src/images/logo.png" alt="" width="200px"/>
+                </div>
+                <div class="col-10">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-auto">
+                            <div class="d-flex align-items-center">
+                                <a href="" data-bs-toggle="modal" data-bs-target="#agregarAviso"><span class="btn btn-solicitar fw-bold"><i class="bi bi-cart-plus-fill fs-5 p-1"></i>Publicar aviso</span></a>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="col-auto">
+                                <div class="card">
+                                    <div class="d-flex justify-content-around fs-4 pt-1 dropdown">
+                                        <a href="#" id="dropdownMenuLink"  class="dropdown-toggle text-black me-2" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span><i class="bi bi-person-badge ms-3 text-black"></i></span></a>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal_configuracion">Configuración</a></li>
+                                            <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-bootstrap-reboot fs-5 p-1"></i>Cerrar Sesion</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+        <!-- Modal nuevo aviso-->
+        <div class="modal fade" id="agregarAviso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Registro de aviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-lg-4">
+                            <label for="">Titulo</label>
+                            <input class="form-control mb-3" type="text">
+                            <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Descripción del producto o servicio</label>
+                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="4" placeholder="IMPORTANTE: En esta sección únicamente debes de escribir la descripción del producto o servicio, está prohibido poner el número de celular"></textarea>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch" id="estado" checked>
+                                <label class="form-check-label" for="estado">Estado de la publicación</label>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="modal-footer pe-4">
+                        <button type="button" class="btn btn-primary rounded-pill btn-estilo">Guardar Aviso</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Configuración -->
+        <div class="modal fade" id="modal_configuracion" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Perfil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-lg-5">
+                        <div>
+                            <label for="">Correo</label> 
+                            <input class="form-control mb-3" type="text">
+                            <label for="">N° Documento/RUC</label>
+                            <input class="form-control mb-3" type="number">
+                            <label for="">Nombres/Razón Social</label>
+                            <input class="form-control mb-3" type="text">
+                            <label for="">Departamento/Ciudad</label>
+                            <input class="form-control mb-3" type="text">
+                            <label for="">Telefono</label>
+                            <input class="form-control mb-3" type="number">
+                            <hr>
+                            <div class="text-center">
+                                <span>ACTUALIZAR CONTRASEÑA</span>
+                            </div>
+                            <label for="">Contraseña actual</label>
+                            <input class="form-control mb-3" type="text">
+                            <label for="">Nueva contraseña</label>
+                            <input class="form-control mb-3" type="text">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-success rounded-pill">Guardar datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="vista_cuadricula_comprador">
+            <div class="container">
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-12">
+                        <div class="card mt-2">
+                            <div class="text-center cinta-2 py-2">
+                                <h3 class="fw-bold text-white ">MIS AVISOS</h3>
+                            </div>
+                            <div class="row justify-content-center">
+                                <!-- items -->
+                                <div class="col-auto">
+                                    <div class="contenedor-articulo1 shadow">
+                                        <div class="detalles text-center">
+                                            <h4 class="fw-bold text-center">Compro laptop</h4>
+                                            <hr>
+                                            <textarea name="descripcion" id="" cols="18" rows="3" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="estado" checked disabled>
+                                            <label class="form-check-label" for="estado">Disponible</label>
+                                        </div>
+                                        <div class="fecha my-2">
+                                            <span>Publibado hace: 2 dias</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#editarAviso"><span class="btn btn-warning rounded-pill btn-estilo">Editar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="col-auto">
+                                    <div class="contenedor-articulo1 shadow">
+                                        <div class="detalles text-center">
+                                            <h4 class="fw-bold text-center">Compro laptop</h4>
+                                            <hr>
+                                            <textarea name="descripcion" id="" cols="18" rows="3" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="mb-2">
+                                            <input type="text" class="form-control form-control-sm" disabled>
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch" id="estado" checked disabled>
+                                            <label class="form-check-label" for="estado">Disponible</label>
+                                        </div>
+                                        <div class="fecha my-2">
+                                            <span>Publibado hace: 2 dias</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="" data-bs-toggle="modal" data-bs-target="#editarAviso"><span class="btn btn-warning rounded-pill btn-estilo">Editar</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-12">
+                        <div class="card mt-2">
+                            <div class="text-center cinta-2 py-2">
+                                <h3 class="fw-bold text-white ">OTROS AVISOS</h3>
+                            </div>
+                            <div class="row justify-content-center">
+                                <!-- items -->
+                                <div class="col-auto">
+                                    <div class="contenedor-articulo shadow">
+                                        <div class="detalles text-center">
+                                            <h4 class="fw-bold text-center">Compro laptop</h4>
+                                            <hr>
+                                            <textarea name="descripcion" id="" cols="18" rows="6" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="estado" disabled>
+                                                <label class="form-check-label" for="estado">No Disponible</label>
+                                            </div>
+                                        </div>
+                                        <div class="fecha my-2">
+                                            <span>Publibado hace: 2 dias</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="/files/pages/pasarela.html"><span class="btn btn-success rounded-pill btn-estilo">Ofrecer</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- items -->
+                                <div class="col-auto">
+                                    <div class="contenedor-articulo shadow">
+                                        <div class="detalles text-center">
+                                            <h4 class="fw-bold text-center">Compro laptop</h4>
+                                            <hr>
+                                            <textarea name="descripcion" id="" cols="18" rows="6" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch" id="estado"  disabled>
+                                                <label class="form-check-label" for="estado">No Disponible</label>
+                                            </div>
+                                        </div>
+                                        <div class="fecha my-2">
+                                            <span>Publibado hace: 2 dias</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="/files/pages/pasarela.html"><span class="btn btn-success rounded-pill btn-estilo">Ofrecer</span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modal editar aviso-->
+        <div class="modal fade" id="editarAviso" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Editar aviso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="p-lg-4">
+                            <label for="">Titulo</label>
+                            <input class="form-control mb-3" type="text">
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripción</label>
+                                <textarea class="form-control mb-3" id="descripcion" rows="4"></textarea>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="estado" checked>
+                                    <label class="form-check-label" for="estado">Estado</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer pe-4">
+                        <button type="button" class="btn btn-primary rounded-pill">Actualizar Datos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-storage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="/files/js/bootstrap.bundle.min.js"></script>
+    <script src="/files/js/bootstrap.min.js"></script>
+    <script src="/files/js/script.js"></script>
+    <script src="/files/js/firebase.js"></script>
+</body>
+</html>

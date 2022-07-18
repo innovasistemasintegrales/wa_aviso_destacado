@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Play", sans-serif;
+  /* font-style: italic; */
+}
+body{
+    background: #F0F0F0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.espacio{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* =====================================ESTILOS HEADER===================================== */
+/* Modo PC */
+#header_tienda{
+    background: #00578e;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.3);
+}
+#contenedor_header{
+    height: 80px;
+}
+.buscar-estilo{
+    border-radius: 20px;
+    padding-top: 10px;
+}
+.card-color{
+    background: #FFD000;
+    border-radius: 20px;
+    margin-top: 2.5px;
+}
+/* =====================================ESTILOS INICIO===================================== */
+/* Seccion ofertas */
+#inicio{
+    background: #FFFFFF;
+    padding-top: 80px;
+}
+.cinta{
+    height: 30px;
+    background: #a5a5a5;
+    /* background: #95ff00; */
+}
+
+/* Categoria */
+.cinta-2{
+    background: #00578e;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.etiqueta{
+    background: #00578e;
+    color: #FFFFFF;
+    border-radius: 40px 40px 40px 40px;
+}
+/* Estilo para contenedor de articulos*/
+.contenedor-articulo{
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 200px;
+    height: 350px;
+}
+.contenedor-articulo1{
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 200px;
+    height: 400px;
+}
+.contenedor-aviso{
+    background: #87e359;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 200px;
+    height: 350px;
+}
+
+/* Estilos de boton */
+.btn-estilo{
+    width: 140px;
+    /* background: #87e359; */
+}
+
+/* =====================================ESTILOS LOGIN===================================== */
+#login{
+    background: linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)),
+    url(/files/src/images/fondoLoginJPG.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#formulario_login{
+    background: #ffffff;
+    background: rgba(18, 67, 97, 0.60);
+    border-radius: 10px;
+}
+.inputs{
+    border-radius: 30px;
+}
+.boton-color{
+    background: #FFD000;
+    border-radius: 30px;
+    color: #000000;
+}
+
+/* =====================================ESTILOS PASARELA DE PAGOS===================================== */
+#pasarela{
+    padding-top: 80px;
+}
+
+/* =====================================ESTILOS MODULO COMPRADOR===================================== */
+#vista_cuadricula_comprador{
+    padding-top: 80px;
+}
+.btn-solicitar{
+    background: #FFD000;
+    color: #000000;
+    border-radius: 30px;
+}
+.btn-solicitar:hover{
+    background: #f3f2ed;
+    color: #000000;
+    border-radius: 30px;
+}
