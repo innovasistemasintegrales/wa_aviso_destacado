@@ -25,21 +25,26 @@
             <div class="container">
                 <div class="row d-flex justify-content-center">
                     <div class="col-sm-12 col-md-8 col-lg-4">
+                      <img src="/files/src/images/logo.png" alt="" class="img-fluid">
                         <form id="formulario_login" action="" class="form-group p-5 shadow">
                             <div>
+                              </div>
                               <div class="text-center mb-3 fw-bold">
                                 <span class="text-white">INICIAR SESION PARA PUBLICAR </span>
                               </div>
                               <div>
-                                <input class="inputs form-control mb-3" type="text" placeholder="Usuario">
+                                <input id="usuario" class="inputs form-control mb-3" type="text" placeholder="Usuario">
                               </div>
                               <div>
-                                <input class="inputs form-control mb-3" type="password" placeholder="Contraseña">
+                                <input id="password" class="inputs form-control mb-3" type="password" placeholder="Contraseña">
                               </div>
                               <div>
-                                <a href="/files/pages/comprador.html"><span class="btn boton-color form-control my-3 fs-5" onclick="">Ingresar</span></a>
+                                <span class="btn boton-color form-control my-3 fs-5" onclick="validarUsuario()">Ingresar</span>
                               </div>
-                              <div class=" text-end">
+                              <div class="text-center mb-3">
+                                <a href="/files/pages/contrasena.html"><span class="text-white my-3" >Olvidé mi contraseña</span></a>
+                              </div>
+                              <div class="text-end">
                                 <a href="" data-bs-toggle="modal" data-bs-target="#registroUsuario"><span class="text-white my-3 fs-5" >Registrarse</span></a>
                               </div>
                             </div>
@@ -54,14 +59,13 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="p-4">
-                                          <input id="id_persona" type="text" hidden>
+                                          <input id="id_persona" type="number" hidden>
+                                          <input id="rol_persona" type="number" value="3" hidden>
                                           <label for="">Correo(Sera tu usuario para iniciar sesion)</label>
                                           <input id="correo" class="form-control mb-3" type="text">
                                           <label for="">Contraseña</label>
-                                          <input id="contrasena" class="form-control mb-3" type="text">
-                                          <label for="">N° Documento/RUC</label>
-                                          <input id="documento" class="form-control mb-3" type="number">
-                                          <label for="">Nombres/Razón Social</label>
+                                          <input id="contrasena" class="form-control mb-3" type="password" onclick="validarCorreo();">
+                                          <label for="">Nombres</label>
                                           <input id="nombres" class="form-control mb-3" type="text">
                                           <label for="">Departamento/Ciudad</label>
                                           <input id="ciudad" class="form-control mb-3" type="text">
@@ -70,7 +74,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer pe-4">
-                                        <button id="btn_registrar" type="button" class="btn btn-primary rounded-pill">Guardar Datos</button>
+                                        <button id="btn_registrar" type="button" class="btn btn-primary rounded-pill" onclick="guardarRegistro()">Guardar Datos</button>
                                     </div>
                                 </div>
                             </div>
@@ -87,6 +91,5 @@
     <script src="/files/js/bootstrap.min.js"></script>
     <script src="/files/js/script.js"></script>
     <script src="/files/js/firebase.js"></script>
-    <script></script>
 </body>
 </html>

@@ -20,12 +20,15 @@
     <div>
         <section id="header_tienda">
             <div id="contenedor_header" class="row align-items-center px-3">
-                <div class="col-2">
-                    <img src="/files/src/images/logo.png" alt="" width="200px"/>
+                <div class="col-2 d-none d-md-block d-lg-block">
+                    <a href="/index.html"><img src="/files/src/images/logo.png" alt="" width="250px"/></a>
+                </div>
+                <div class="col-2 d-md-none d-lg-none d-sm-block">
+                    <a href="/index.html"><img src="/files/src/icons/icono.ico" alt="" width="50px"/></a>
                 </div>
                 <div class="col-10">
                     <div class="row d-flex justify-content-end">
-                        <div class="col col-lg-3">
+                        <!-- <div class="col col-lg-3">
                             <div class="d-flex align-items-center">
                                 <div class="input-group">
                                     <input type="text" class="form-control buscar-estilo" placeholder="Hola!¿Que buscas?" aria-describedby="button-addon2" />
@@ -34,11 +37,11 @@
                                     </button>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-auto">
                             <div class="card card-color">
                                 <div class="d-flex justify-content-around fs-4">
-                                    <a href="/files/pages/login.html"><span class="me-3 text-black"><i class="bi bi-person-circle mx-3 text-black"></i>Publicar compra</span></a>
+                                    <a href="/files/pages/login.html"><span class="me-3 text-black"><i class="bi bi-person-circle mx-3 text-black"></i>Publicar avisos</span></a>
                                 </div>
                             </div>
                         </div>
@@ -47,20 +50,20 @@
             </div>
         </section>
         <section id="inicio">
-            <div class="cinta"></div>
+            <!-- <div class="cinta"></div> -->
             <div class="container">
                 <div class="row">
                     <div class="col">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="/files/src/images/slider1.svg" class="d-block w-100" alt="...">
+                                <img src="/files/src/images/Slider1.png" class="d-block w-100" alt="...">
                               </div>
                               <div class="carousel-item">
-                                <img src="/files/src/images/slider2.svg" class="d-block w-100" alt="...">
+                                <img src="/files/src/images/Slider2.png" class="d-block w-100" alt="...">
                               </div>
                               <div class="carousel-item">
-                                <img src="/files/src/images/slider3.svg" class="d-block w-100" alt="...">
+                                <img src="/files/src/images/Slider3.png" class="d-block w-100" alt="...">
                               </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -75,7 +78,7 @@
                     </div>
                 </div>
             </div>
-            <div class="cinta"></div>
+            <!-- <div class="cinta"></div> -->
         </section>
         <div id="contenedor_productos">
             <section id="vista_cuadricula">
@@ -86,53 +89,18 @@
                                 <h3 class="fw-bold text-white ">AVISOS</h3>
                             </div>
                             <div class="card mt-2">
-                                <div class="row justify-content-center">
-                                    <!-- items -->
-                                    <div class="col-auto">
-                                        <div class="contenedor-articulo shadow">
-                                            <div class="detalles text-center">
-                                                <h4 class="fw-bold text-center">Compro laptop</h4>
-                                                <hr>
-                                                <textarea name="descripcion" id="" cols="18" rows="6" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="estado"  disabled>
-                                                    <label class="form-check-label" for="estado">No Disponible</label>
-                                                </div>
-                                            </div>
-                                            <div class="fecha my-2">
-                                                <span>Publibado hace: 2 dias</span>
-                                            </div>
-                                            <div class="text-center">
-                                                <a href="/files/pages/pasarela.html"><span class="btn btn-primary rounded-pill btn-estilo">Ofrecer</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- items -->
-                                    <div class="col-auto">
-                                        <div class="contenedor-articulo shadow">
-                                            <div class="detalles text-center">
-                                                <h4 class="fw-bold text-center">Compro laptop</h4>
-                                                <hr>
-                                                <textarea name="descripcion" id="" cols="18" rows="6" class="p-2" disabled>Compro laptop con procesador Core i5 11va Ram 4 en Arequipa</textarea>
-                                                <div class="form-check form-switch">
-                                                    <input class="form-check-input" type="checkbox" role="switch" id="estado"  disabled>
-                                                    <label class="form-check-label" for="estado">No Disponible</label>
-                                                </div>
-                                            </div>
-                                            <div class="fecha my-2">
-                                                <span>Publibado hace: 2 dias</span>
-                                            </div>
-                                            <div class="text-center">
-                                                <a href="/files/pages/pasarela.html"><span class="btn btn-primary rounded-pill btn-estilo">Ofrecer</span></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="avisoIndex" class="row fondo-contenedor justify-content-center">
+                                    <!-- Aviso Index -->
+                                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="text-center footer py-1">
+            <span class="text-white" href="">Powered by: INNOVA SISTEMAS INTEGRALES S.A.C.</span>
         </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
@@ -142,5 +110,8 @@
     <script src="/files/js/bootstrap.min.js"></script>
     <script src="/files/js/script.js"></script>
     <script src="/files/js/firebase.js"></script>
+    <script>
+        mostrarAvisoIndex();
+    </script>
 </body>
 </html>

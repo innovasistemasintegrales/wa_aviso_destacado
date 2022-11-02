@@ -75,32 +75,18 @@ function main(){
 }
 /* CAROUSEL */
 $(document).ready(function() {
-    $('#WidthIndex').lightSlider({
+    $('#WidtAvisoPropio').lightSlider({
         autoWidth:true,
         loop:true,
         onSliderLoad: function() {
-            $('#WidthIndex').removeClass('cS-hidden');
+            $('#WidtAvisoPropio').removeClass('cS-hidden');
         } 
     });  
-    $('#WidthPromocion').lightSlider({
+    $('#WidtOtrosAvisos').lightSlider({
         autoWidth:true,
         loop:true,
         onSliderLoad: function() {
-            $('#WidthPromocion').removeClass('cS-hidden');
-        } 
-    });  
-    $('#WidthCategoria1').lightSlider({
-        autoWidth:true,
-        loop:true,
-        onSliderLoad: function() {
-            $('#WidthCategoria1').removeClass('cS-hidden');
-        } 
-    });  
-    $('#WidthPersonal').lightSlider({
-        autoWidth:true,
-        loop:true,
-        onSliderLoad: function() {
-            $('#WidthPersonal').removeClass('cS-hidden');
+            $('#WidtOtrosAvisos').removeClass('cS-hidden');
         } 
     });  
 });

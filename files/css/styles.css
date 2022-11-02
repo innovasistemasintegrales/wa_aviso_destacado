@@ -38,7 +38,7 @@ a{
     padding-top: 10px;
 }
 .card-color{
-    background: #FFD000;
+    background: #FFFFFF;
     border-radius: 20px;
     margin-top: 2.5px;
 }
@@ -67,12 +67,13 @@ a{
 }
 /* Estilo para contenedor de articulos*/
 .contenedor-articulo{
+    background: #ffffff;
     border: solid 1px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 0.5em;
     padding: 0.5em;
     width: 200px;
-    height: 350px;
+    height: 370px;
 }
 .contenedor-articulo1{
     border: solid 1px rgba(0, 0, 0, 0.3);
@@ -80,16 +81,16 @@ a{
     margin: 0.5em;
     padding: 0.5em;
     width: 200px;
-    height: 400px;
+    height: 450px;
 }
 .contenedor-aviso{
-    background: #87e359;
+    background: #3699FF;
     border: solid 1px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     margin: 0.5em;
     padding: 0.5em;
-    width: 200px;
-    height: 350px;
+    /* width: 200px;
+    height: 350px; */
 }
 
 /* Estilos de boton */
@@ -98,16 +99,20 @@ a{
     /* background: #87e359; */
 }
 
+.fondo-contenedor{
+    background: #F0F0F0;
+}
 /* =====================================ESTILOS LOGIN===================================== */
 #login{
-    background: linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)),
-    url(/files/src/images/fondoLoginJPG.jpg) no-repeat center center fixed;
+    /* background: linear-gradient(rgba(5, 7, 12, 0.20),rgba(5, 7, 12, 0.20)),
+    url(/files/src/images/fondoLoginJPG.jpg) no-repeat center center fixed; */
+    background: #00578e;
     background-size: cover;
     height: 100vh;
 }
 #formulario_login{
     background: #ffffff;
-    background: rgba(18, 67, 97, 0.60);
+    background: rgba(18, 67, 97, 0.80);
     border-radius: 10px;
 }
 .inputs{
@@ -129,7 +134,7 @@ a{
     padding-top: 80px;
 }
 .btn-solicitar{
-    background: #FFD000;
+    background: #FFFFFF;
     color: #000000;
     border-radius: 30px;
 }
@@ -137,4 +142,21 @@ a{
     background: #f3f2ed;
     color: #000000;
     border-radius: 30px;
+}
+
+/* =====================================ESTILOS MODULO ADMINISTRADOR===================================== */
+#clientes_admin{
+    padding-top: 80px;
+}
+
+.color-container{
+    background: #CAD5DB;
+}
+
+#btn_agregar{
+    width: 100px;
+}
+.footer{
+    background: #00578e;
+    font-size: small;
 }
